@@ -72,7 +72,7 @@ export default function Testimonials() {
               <div className="absolute inset-x-6 bottom-6 flex items-end justify-between">
                 <div>
                   <span className="text-[11px] font-bold uppercase tracking-[0.22em] text-gold-300">Customer field note</span>
-                  <p className="display mt-1 text-2xl text-white sm:text-3xl">{t.name}</p>
+                  <p className="display mt-1 text-xl text-white sm:text-2xl">{t.name}</p>
                 </div>
                 <span className="rounded-full bg-black/30 px-3 py-1.5 text-xs font-bold text-white/80 ring-1 ring-white/20 backdrop-blur">
                   {String(index + 1).padStart(2, '0')} / {String(TESTIMONIALS.length).padStart(2, '0')}
@@ -89,7 +89,7 @@ export default function Testimonials() {
                   </div>
                   <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/50">Verified voice</span>
                 </div>
-                <blockquote key={t.name} className="display mt-8 animate-fade-in text-2xl leading-snug text-white/95 sm:text-[1.75rem]">
+                <blockquote key={t.name} className="display mt-8 animate-fade-in text-lg leading-relaxed text-white/95 sm:text-[1.375rem] sm:leading-snug">
                   “{t.quote}”
                 </blockquote>
               </div>
