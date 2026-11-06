@@ -123,7 +123,7 @@ export default function AboutPage() {
             <h2 className="display mt-5 text-5xl text-forest-900 sm:text-6xl">Built with a wider purpose.</h2>
             <div className="mt-10 grid grid-cols-2 gap-3">
               {PARTNERS.map((p, i) => (
-                <div key={p.name} className={`flex items-center gap-4 rounded-2xl bg-white px-5 py-5 ring-1 ring-stone-200 ${i === 0 ? 'col-span-2' : ''}`}>
+                <div key={p.name} className={`flex items-center gap-4 rounded-2xl bg-white px-5 py-5 ring-1 ring-stone-200 ${i === 0 ? 'col-span-2 justify-center' : ''}`}>
                   <img src={p.logo} alt={`${p.name} logo`} className="h-10 w-auto max-w-[45%] shrink-0 object-contain" />
                   <span className="display text-lg text-forest-900">{p.name}</span>
                 </div>
