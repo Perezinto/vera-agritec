@@ -1,16 +1,9 @@
+import { IMG } from '@/data/images';
+
 type LogoProps = {
   className?: string;
-  variant?: 'full' | 'mark';
 };
 
-export default function Logo({ className = '', variant = 'full' }: LogoProps) {
-  return (
-    <div className={`flex items-center ${className}`}>
-      <img
-        src="/logo.svg"
-        alt="Vera AgriTech"
-        className={variant === 'mark' ? 'h-11 w-16 object-cover object-top' : 'h-14 w-[150px] object-contain'}
-      />
-    </div>
-  );
+export default function Logo({ className = 'h-16 sm:h-[72px]' }: LogoProps) {
+  return <img src={IMG.logo} alt="Vera AgriTech" className={`w-auto object-contain ${className}`} />;
 }

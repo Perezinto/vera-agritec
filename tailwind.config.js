@@ -30,6 +30,33 @@ export default {
           900: '#365717',
           950: '#1c3009',
         },
+        forest: {
+          50: '#eef5f1',
+          100: '#d5e6dc',
+          200: '#acccb9',
+          300: '#7caf93',
+          400: '#4c8c5b',
+          500: '#33724a',
+          600: '#235a3c',
+          700: '#1b4a33',
+          800: '#173f35',
+          900: '#10302a',
+          950: '#0a1f1b',
+        },
+        gold: {
+          50: '#fdf8ec',
+          100: '#f9edcc',
+          200: '#f3d995',
+          300: '#ecc25d',
+          400: '#e7a93d',
+          500: '#dfa52e',
+          600: '#c3801f',
+          700: '#a1601c',
+          800: '#834c1d',
+          900: '#6c3f1b',
+          950: '#3e200b',
+        },
+        cream: '#f7f5ee',
         warm: {
           50: '#fbf8f1',
           100: '#f4ecdb',
@@ -46,12 +73,13 @@ export default {
       },
       fontFamily: {
         sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
-        display: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+        display: ['Fraunces', 'Georgia', 'serif'],
       },
       animation: {
         'fade-up': 'fadeUp 0.6s ease-out forwards',
         'fade-in': 'fadeIn 0.5s ease-out forwards',
         'slow-zoom': 'slowZoom 20s ease-in-out infinite alternate',
+        marquee: 'marquee 40s linear infinite',
       },
       keyframes: {
         fadeUp: {
@@ -61,6 +89,10 @@ export default {
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
+        },
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
         },
         slowZoom: {
           '0%': { transform: 'scale(1)' },
