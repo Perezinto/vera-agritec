@@ -1,4 +1,4 @@
-import { Globe2, Handshake } from 'lucide-react';
+import { Globe2 } from 'lucide-react';
 import Layout from '@/components/Layout';
 import CTABand from '@/components/sections/CTABand';
 import SplitHero from '@/components/sections/SplitHero';
@@ -6,6 +6,7 @@ import StatsGrid from '@/components/sections/StatsGrid';
 import Eyebrow from '@/components/ui/Eyebrow';
 import Reveal from '@/components/ui/Reveal';
 import { IMG } from '@/data/images';
+import { PARTNERS } from '@/data/partners';
 
 const STEPS = [
   { title: 'Climate-Smart Infrastructure', desc: 'Localized structures and controlled growing environments.' },
@@ -121,14 +122,10 @@ export default function AboutPage() {
             <Eyebrow>Alignment</Eyebrow>
             <h2 className="display mt-5 text-5xl text-forest-900 sm:text-6xl">Built with a wider purpose.</h2>
             <div className="mt-10 grid grid-cols-2 gap-3">
-              <div className="col-span-2 flex items-center gap-4 rounded-2xl bg-white px-5 py-5 ring-1 ring-stone-200">
-                <img src="/partners/agro-preciso.png" alt="Agro Preciso" className="h-10 w-auto object-contain" />
-                <span className="text-[11px] font-bold uppercase tracking-[0.18em] text-stone-500">Official partner</span>
-              </div>
-              {['IFAD', 'SMEDAN', 'Sterling Bank', 'Rex Insurance'].map((p) => (
-                <div key={p} className="flex items-center gap-3 rounded-2xl bg-white px-5 py-5 ring-1 ring-stone-200">
-                  <Handshake className="h-5 w-5 text-gold-600" />
-                  <span className="display text-xl text-forest-900">{p}</span>
+              {PARTNERS.map((p, i) => (
+                <div key={p.name} className={`flex items-center gap-4 rounded-2xl bg-white px-5 py-5 ring-1 ring-stone-200 ${i === 0 ? 'col-span-2' : ''}`}>
+                  <img src={p.logo} alt={`${p.name} logo`} className="h-10 w-auto max-w-[45%] shrink-0 object-contain" />
+                  <span className="display text-lg text-forest-900">{p.name}</span>
                 </div>
               ))}
             </div>
