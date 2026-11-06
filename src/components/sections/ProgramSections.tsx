@@ -83,7 +83,7 @@ export function QuoteCTA({ quote, cta }: { quote: string; cta: string }) {
       <div className="container-x">
         <Reveal className="mx-auto max-w-4xl text-center">
           <Quote className="mx-auto h-12 w-12 text-gold-400" />
-          <p className="display mt-8 text-balance text-4xl italic leading-tight text-forest-900 sm:text-5xl">{quote}</p>
+          <p className="display mt-8 text-balance text-3xl font-medium leading-tight text-forest-900 sm:text-4xl">{quote}</p>
           <Button href="/contact" variant="forest" className="mt-12">{cta}</Button>
         </Reveal>
       </div>

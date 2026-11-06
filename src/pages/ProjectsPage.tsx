@@ -44,7 +44,7 @@ export default function ProjectsPage() {
     <Layout>
       <ImageHero
         eyebrow="Social Proof & Performance"
-        title={<>Featured projects <span className="italic text-gold-400">&amp; case studies.</span></>}
+        title={<>Featured projects <span className="text-gold-400">&amp; case studies.</span></>}
         description="Explore Vera's real-world agricultural engineering installations and evidence-backed outcomes."
         image={IMG.coveredStructure}
         alt="Vera AgriTech screen house installation"

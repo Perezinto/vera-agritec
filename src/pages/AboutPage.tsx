@@ -18,7 +18,7 @@ export default function AboutPage() {
     <Layout>
       <SplitHero
         eyebrow="About Vera AgriTech"
-        title={<>Growing smarter.<span className="block italic text-gold-400">Feeding the future.</span></>}
+        title={<>Growing smarter.<span className="block text-gold-400">Feeding the future.</span></>}
         description="Vera AgriTech transforms traditional farming into a highly productive, climate-smart and commercially viable enterprise."
         image={IMG.pepperCrates}
         alt="Vera AgriTech greenhouse design"

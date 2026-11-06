@@ -23,7 +23,7 @@ function Hero() {
         <div className="lg:col-span-8">
           <Reveal>
             <h1 className="display text-balance text-5xl leading-[1.02] text-white sm:text-6xl lg:text-[5.25rem]">
-              Building Climate-Smart Food Production Systems <span className="italic text-gold-400">Across African Cities</span>
+              Building Climate-Smart Food Production Systems <span className="text-gold-400">Across African Cities</span>
             </h1>
           </Reveal>
           <Reveal delay={120}>
@@ -133,7 +133,7 @@ function About() {
             <Eyebrow>Our Positioning</Eyebrow>
             <h2 className="display mt-5 text-5xl text-forest-900 sm:text-6xl">
               Growing Smarter.
-              <span className="mt-1 block italic text-forest-400">Feeding the Future.</span>
+              <span className="mt-1 block text-forest-400">Feeding the Future.</span>
             </h2>
             <p className="mt-7 text-lg text-stone-600">Vera AgriTech transforms traditional farming into a productive, climate-smart and commercially viable enterprise.</p>
           </Reveal>
