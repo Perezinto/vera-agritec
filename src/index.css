@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -27,7 +27,7 @@
     @apply py-20 sm:py-24 lg:py-32;
   }
   .display {
-    @apply font-display font-semibold tracking-[-0.035em];
+    @apply font-display font-semibold tracking-[-0.025em];
   }
   .grain {
     background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
