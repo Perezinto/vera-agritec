@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 920" role="img" aria-labelledby="title desc">
+  <title id="title">Vera AgriTech</title>
+  <desc id="desc">Vera AgriTech logo with two leaves and registration number RC: 9574672</desc>
+  <g transform="translate(370 24)">
+    <path fill="#1d5b49" d="M302 452C278 232 379 83 620 0c9 207-47 354-318 452Z"/>
+    <path fill="#5b9f49" d="M303 442C173 432 76 358 48 234c131-3 230 44 255 208Z"/>
+    <path fill="#fff" d="M584 46C494 157 424 278 372 433l31-1c58-159 123-282 181-386Z"/>
+    <path fill="#fff" d="M106 255c74 47 131 103 181 175l-11 16C215 373 159 314 106 255Z"/>
+    <rect x="342" y="428" width="30" height="80" rx="15" fill="#dfa52e"/>
+  </g>
+  <text x="65" y="685" font-family="Arial, Helvetica, sans-serif" font-size="154" font-weight="800" letter-spacing="-8"><tspan fill="#17604f">Vera</tspan><tspan fill="#dfa52e"> AgriTech</tspan></text>
+  <text x="449" y="783" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" letter-spacing="12" fill="#dfa52e">RC: 9574672</text>
+</svg>

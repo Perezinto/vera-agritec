@@ -1,0 +1,73 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#f0f9f4',
+          100: '#dcf0e4',
+          200: '#bbe1ca',
+          300: '#8bcbab',
+          400: '#54ad84',
+          500: '#2f8e64',
+          600: '#1f724f',
+          700: '#1a5b41',
+          800: '#164835',
+          900: '#123b2d',
+          950: '#0a2219',
+        },
+        accent: {
+          50: '#f7fdf0',
+          100: '#edfadb',
+          200: '#daf5b6',
+          300: '#c0ee87',
+          400: '#a3df54',
+          500: '#86ca2c',
+          600: '#69a617',
+          700: '#518214',
+          800: '#406815',
+          900: '#365717',
+          950: '#1c3009',
+        },
+        warm: {
+          50: '#fbf8f1',
+          100: '#f4ecdb',
+          200: '#e9d6b3',
+          300: '#dcb984',
+          400: '#cf9a59',
+          500: '#c5843f',
+          600: '#b06c34',
+          700: '#92532c',
+          800: '#764229',
+          900: '#613825',
+          950: '#361d11',
+        },
+      },
+      fontFamily: {
+        sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+        display: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+      },
+      animation: {
+        'fade-up': 'fadeUp 0.6s ease-out forwards',
+        'fade-in': 'fadeIn 0.5s ease-out forwards',
+        'slow-zoom': 'slowZoom 20s ease-in-out infinite alternate',
+      },
+      keyframes: {
+        fadeUp: {
+          '0%': { opacity: '0', transform: 'translateY(24px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slowZoom: {
+          '0%': { transform: 'scale(1)' },
+          '100%': { transform: 'scale(1.08)' },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
