@@ -11,6 +11,7 @@ import StatsGrid from '@/components/sections/StatsGrid';
 import Testimonials from '@/components/sections/Testimonials';
 import { IMG } from '@/data/images';
 import { CONTACT } from '@/data/site';
+import { PARTNERS } from '@/data/partners';
 
 function Hero() {
   return (
@@ -63,13 +64,6 @@ function Hero() {
   );
 }
 
-const PARTNERS = [
-  { name: 'Sterling Bank', role: 'Agric Finance Partner' },
-  { name: 'SMEDAN', role: 'Enterprise Development' },
-  { name: 'Rex Insurance', role: 'Agricultural Underwriting' },
-  { name: 'IFAD', role: 'Development Partner' },
-];
-
 function Partners() {
   return (
     <section id="partners" className="border-b border-stone-200 bg-white">
@@ -77,10 +71,13 @@ function Partners() {
         <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-stone-500">
           <ShieldCheck className="h-4 w-4 text-forest-500" /> Strategic Partners &amp; Institutional Collaborators
         </p>
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
           {PARTNERS.map((p) => (
-            <div key={p.name} className="rounded-2xl bg-cream px-5 py-4 ring-1 ring-stone-200">
-              <p className="display text-lg text-forest-900">{p.name}</p>
+            <div key={p.name} className="flex flex-col rounded-2xl bg-cream px-5 py-4 ring-1 ring-stone-200">
+              <div className="flex h-10 items-center">
+                <img src={p.logo} alt={`${p.name} logo`} className="max-h-full max-w-full object-contain" />
+              </div>
+              <p className="mt-3 text-sm font-semibold text-forest-900">{p.name}</p>
               <p className="mt-0.5 text-[10px] font-bold uppercase tracking-[0.14em] text-stone-500">{p.role}</p>
             </div>
           ))}

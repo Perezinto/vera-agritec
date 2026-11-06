@@ -18,7 +18,6 @@ export const IMG = {
   renderStructure: `${base}/designs-and-3d-renders/greenhouse-structure-render-01.jpeg`,
   renderLettuce: `${base}/designs-and-3d-renders/lettuce-greenhouse-render-01.jpeg`,
   fieldTeam: `${base}/field-and-team-work/field-team-working-01.jpeg`,
-  founder: `${base}/people/vera-team-member-portrait-01.jpeg`,
   pepperCrates: `${base}/produce-and-harvest/pepper-harvest-crates-01.jpeg`,
   pepperLettuce: `${base}/produce-and-harvest/pepper-lettuce.jpg`,
   tomatoCrates: `${base}/produce-and-harvest/tomato-harvest-crates-01.jpeg`,
