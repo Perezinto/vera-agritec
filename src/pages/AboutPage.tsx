@@ -128,9 +128,8 @@ export default function AboutPage() {
                 { name: 'IFAD', logo: IMG.partnerIFAD },
                 { name: 'Agro Preciso', logo: IMG.partnerAgroPreciso },
               ].map((p) => (
-                <div key={p.name} className="flex flex-col items-center gap-3 rounded-2xl bg-white px-5 py-5 text-center ring-1 ring-stone-200">
-                  <img src={p.logo} alt={`${p.name} logo`} className="h-10 w-auto object-contain" />
-                  <span className="display text-base text-forest-900">{p.name}</span>
+                <div key={p.name} className="flex items-center justify-center rounded-2xl bg-white px-5 py-6 ring-1 ring-stone-200">
+                  <img src={p.logo} alt={`${p.name} logo`} className="h-12 w-auto object-contain" />
                 </div>
               ))}
             </div>

@@ -80,12 +80,9 @@ function Partners() {
         </p>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
           {PARTNERS.map((p) => (
-            <div key={p.name} className="flex flex-col items-center gap-3 rounded-2xl bg-cream px-5 py-5 text-center ring-1 ring-stone-200">
+            <div key={p.name} className="flex flex-col items-center gap-2 rounded-2xl bg-cream px-5 py-5 text-center ring-1 ring-stone-200">
               <img src={p.logo} alt={`${p.name} logo`} className="h-12 w-auto object-contain" />
-              <div>
-                <p className="display text-base text-forest-900">{p.name}</p>
-                <p className="mt-0.5 text-[10px] font-bold uppercase tracking-[0.14em] text-stone-500">{p.role}</p>
-              </div>
+              <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-stone-500">{p.role}</p>
             </div>
           ))}
         </div>
