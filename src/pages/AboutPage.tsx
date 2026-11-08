@@ -1,4 +1,4 @@
-import { Check, Globe2, Handshake } from 'lucide-react';
+import { Globe2 } from 'lucide-react';
 import Layout from '@/components/Layout';
 import CTABand from '@/components/sections/CTABand';
 import SplitHero from '@/components/sections/SplitHero';
@@ -115,38 +115,22 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="section-y bg-white">
-        <div className="container-x grid items-center gap-14 lg:grid-cols-12">
-          <Reveal className="relative lg:col-span-5">
-            <div className="overflow-hidden rounded-[2rem] bg-gradient-to-b from-gold-100 to-gold-300">
-              <img src={IMG.founder} alt="Dr. Nurudeen S. Lawal" className="aspect-[4/5] w-full object-cover object-top" />
-            </div>
-          </Reveal>
-          <Reveal delay={120} className="lg:col-span-7">
-            <Eyebrow>Leadership</Eyebrow>
-            <h2 className="display mt-5 text-5xl text-forest-900 sm:text-6xl">Meet the founder.</h2>
-            <h3 className="mt-4 text-xl font-bold text-forest-500">Dr. Nurudeen S. Lawal</h3>
-            <p className="mt-6 text-lg text-stone-600">An agripreneur and agricultural engineer, Dr. Lawal is a COREN-registered engineer with 20+ years' experience and a Ph.D. in Agricultural and Environmental Engineering from the University of Ibadan.</p>
-            <ul className="mt-8 flex flex-wrap gap-3">
-              {['Irrigation engineering', 'Soil and water conservation', 'Soilless crop nutrition'].map((t) => (
-                <li key={t} className="inline-flex items-center gap-2 rounded-full bg-cream px-4 py-2 text-sm font-semibold text-forest-900 ring-1 ring-stone-200"><Check className="h-4 w-4 text-forest-500" />{t}</li>
-              ))}
-            </ul>
-            <p className="mt-8 border-l-2 border-gold-400 pl-4 text-sm text-stone-500">His stated experience includes managing World Bank-funded projects.</p>
-          </Reveal>
-        </div>
-      </section>
-
       <section className="section-y bg-cream">
         <div className="container-x grid gap-10 lg:grid-cols-12">
           <Reveal className="lg:col-span-7">
             <Eyebrow>Alignment</Eyebrow>
             <h2 className="display mt-5 text-5xl text-forest-900 sm:text-6xl">Built with a wider purpose.</h2>
-            <div className="mt-10 grid grid-cols-2 gap-3">
-              {['IFAD', 'SMEDAN', 'Sterling Bank', 'Rex Insurance'].map((p) => (
-                <div key={p} className="flex items-center gap-3 rounded-2xl bg-white px-5 py-5 ring-1 ring-stone-200">
-                  <Handshake className="h-5 w-5 text-gold-600" />
-                  <span className="display text-xl text-forest-900">{p}</span>
+            <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3">
+              {[
+                { name: 'Sterling Bank', logo: IMG.partnerSterling },
+                { name: 'SMEDAN', logo: IMG.partnerSMEDAN },
+                { name: 'Rex Insurance', logo: IMG.partnerRex },
+                { name: 'IFAD', logo: IMG.partnerIFAD },
+                { name: 'Agro Preciso', logo: IMG.partnerAgroPreciso },
+              ].map((p) => (
+                <div key={p.name} className="flex flex-col items-center gap-3 rounded-2xl bg-white px-5 py-5 text-center ring-1 ring-stone-200">
+                  <img src={p.logo} alt={`${p.name} logo`} className="h-10 w-auto object-contain" />
+                  <span className="display text-base text-forest-900">{p.name}</span>
                 </div>
               ))}
             </div>

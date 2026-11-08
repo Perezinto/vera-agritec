@@ -22,4 +22,9 @@ export const IMG = {
   pepperCrates: `${base}/produce-and-harvest/pepper-harvest-crates-01.jpeg`,
   pepperLettuce: `${base}/produce-and-harvest/pepper-lettuce.jpg`,
   tomatoCrates: `${base}/produce-and-harvest/tomato-harvest-crates-01.jpeg`,
+  partnerSterling: '/partner-logos/sterling-bank.png',
+  partnerSMEDAN: '/partner-logos/smedan.png',
+  partnerRex: '/partner-logos/rex-insurance.png',
+  partnerIFAD: '/partner-logos/ifad.png',
+  partnerAgroPreciso: '/partner-logos/agro-preciso.png',
 };
