@@ -68,7 +68,7 @@ const PARTNERS = [
   { name: 'SMEDAN', role: 'Enterprise Development', logo: IMG.partnerSMEDAN },
   { name: 'Rex Insurance', role: 'Agricultural Underwriting', logo: IMG.partnerRex },
   { name: 'IFAD', role: 'Development Partner', logo: IMG.partnerIFAD },
-  { name: 'Agro Preciso', role: 'Agri-Business Collaborator', logo: IMG.partnerAgroPreciso },
+  { name: 'Agro Preciso', role: 'Agro Business Collaborator', logo: IMG.partnerAgroPreciso },
 ];
 
 function Partners() {
