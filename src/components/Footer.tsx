@@ -76,7 +76,7 @@ export default function Footer() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="agronomist@farm.ng"
+                placeholder="info@veraagritech.com"
                 className="min-w-0 flex-1 bg-transparent px-4 text-sm text-white placeholder:text-white/40 focus:outline-none"
               />
               <button type="submit" className="inline-flex items-center gap-1.5 rounded-full bg-gold-400 px-5 py-2.5 text-sm font-bold text-forest-900 transition-colors hover:bg-gold-300">

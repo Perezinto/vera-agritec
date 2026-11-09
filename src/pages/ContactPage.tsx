@@ -22,10 +22,10 @@ function ContactForm() {
             <h2 className="display mt-5 text-4xl sm:text-5xl">Tell us about your next step.</h2>
             <ul className="mt-10 space-y-5 text-white/80">
               <li className="flex gap-3"><MapPin className="h-5 w-5 shrink-0 text-gold-400" />Lagos · Abuja · Kaduna · Ibadan</li>
-              <li><a href="mailto:hello@veraagritech.com" className="flex gap-3 hover:text-white"><Mail className="h-5 w-5 shrink-0 text-gold-400" />hello@veraagritech.com</a></li>
-              <li className="flex gap-3"><Phone className="h-5 w-5 shrink-0 text-gold-400" />+234 800 VERA AGRI</li>
+              <li><a href="mailto:info@veraagritech.com" className="flex gap-3 hover:text-white"><Mail className="h-5 w-5 shrink-0 text-gold-400" />info@veraagritech.com</a></li>
+              <li className="flex gap-3"><Phone className="h-5 w-5 shrink-0 text-gold-400" />+234 803 521 7807</li>
             </ul>
-            <a href="https://wa.me/2348008372247" target="_blank" rel="noopener noreferrer" className="mt-10 inline-flex items-center gap-2 rounded-full bg-[#25D366] px-6 py-3.5 text-sm font-bold text-white transition-transform hover:-translate-y-0.5">
+            <a href="https://wa.me/2348035217807" target="_blank" rel="noopener noreferrer" className="mt-10 inline-flex items-center gap-2 rounded-full bg-[#25D366] px-6 py-3.5 text-sm font-bold text-white transition-transform hover:-translate-y-0.5">
               <MessageCircle className="h-5 w-5" /> Chat on WhatsApp
             </a>
           </div>
