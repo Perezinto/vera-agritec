@@ -22,8 +22,12 @@ function Hero() {
       <div className="container-x relative grid min-h-[calc(100svh-120px)] items-center gap-12 py-24 lg:grid-cols-12">
         <div className="lg:col-span-8">
           <Reveal>
-            <h1 className="display text-balance text-5xl leading-[1.02] text-white sm:text-6xl lg:text-[5.25rem]">
-              Building Climate-Smart Food Production Systems <span className="text-gold-400">Across African Cities</span>
+            <h1 className="text-balance text-5xl leading-[1.02] tracking-tight text-white sm:text-6xl lg:text-[5.25rem]">
+              <span className="font-sans font-extrabold tracking-[-0.03em]">Building </span>
+              <span className="font-serif font-semibold italic text-gold-400">Climate-Smart</span>
+              <br className="hidden sm:block" />
+              <span className="font-sans font-extrabold tracking-[-0.03em]"> Food Production Systems </span>
+              <span className="mt-1 block font-serif text-4xl font-normal italic leading-[1.1] text-white/90 sm:text-5xl lg:text-[3.5rem]">Across African Cities</span>
             </h1>
           </Reveal>
           <Reveal delay={120}>
