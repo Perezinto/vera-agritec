@@ -138,7 +138,7 @@ function About() {
             <Eyebrow>Our Positioning</Eyebrow>
             <h2 className="display mt-5 text-5xl text-forest-900 sm:text-6xl">
               Growing Smarter.
-              <span className="mt-3 block bg-gradient-to-r from-gold-500 via-gold-400 to-gold-500 bg-clip-text font-serif text-3xl font-normal italic tracking-tight text-transparent sm:text-4xl">Feeding the Future.</span>
+              <span className="mt-3 block bg-gradient-to-r from-forest-500 via-forest-400 to-forest-500 bg-clip-text font-serif text-3xl font-normal italic tracking-tight text-transparent sm:text-4xl">Feeding the Future.</span>
             </h2>
             <p className="mt-7 text-lg text-stone-600">Vera AgriTech transforms traditional farming into a productive, climate-smart and commercially viable enterprise.</p>
           </Reveal>
