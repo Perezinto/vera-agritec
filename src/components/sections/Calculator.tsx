@@ -111,7 +111,7 @@ export default function Calculator() {
                 Notice: Results are commercial projections and estimates based on standard Good Agricultural Practices (GAP). Actual yields depend on local water quality, management adherence, and solar insolation.
               </p>
 
-              <Button href="/contact" variant="forest" className="mt-8">Request Custom Project Feasibility</Button>
+              <Button href="/contact#contact-form" variant="forest" className="mt-8">Request Custom Project Feasibility</Button>
             </div>
           </div>
         </Reveal>
